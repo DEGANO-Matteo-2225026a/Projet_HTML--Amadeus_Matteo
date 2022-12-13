@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Luxurious+Roman&display=swap');
+
+html {
+    border-width: 30px;
+    border-style: solid;
+    border-image-source: url(4023926.jpg);
+    border-image-slice: 300;
+    border-image-repeat: round;
+    font-family: "Lucida Sans Unicode";
+
+}
+
+.menu {
+    display: flex;                /* Transformation en flexbox */
+    padding:0;                    /* Suppression des marges internes */
+    border: 4px solid #E6E6E6;
+    background-color: #ccc;       /* Ajout de la couleur d'arrière-plan */
+    justify-content: space-around;/* Alignements des liens dans le menu */
+}
+.menu li {
+    list-style-type: none ;       /* Suppression des puces */
+
+}
+.menu a {
+    display:block;                /* Transformation en block */
+    min-width: 120px;             /* Largeur minimale des liens */
+
+    margin: 0.5rem;               /* Marges externes */
+    padding: 0.4rem 0;            /* Marges internes */
+    text-align: center;           /* Centrage du texte */
+    background-color: lightgrey;    /* Arrière-plan */
+    color: #fff;                  /* Couleur du texte */
+    text-decoration: none;        /* Suppression du soulignement */
+    border: 1px solid #fff;       /* Ajout d'une bordure */
+    border-radius: 4px;           /* Arrondis des bordures */
+
+    transition: all 1s ;          /* Ajout des effets de transition */
+}
+.menu a.actif {
+    background-color: #3dc9b3 ;
+    color: #000 ;
+    border-color: #309383 ;
+}
+.menu a:hover,
+.menu a:hover.actif{
+    background-color: #a1a0a0;
+    color: 	#000;
+    border-color: 	#e1e1e1;
+}
+
+a {
+    color: #000;
+    text-decoration-thickness: 2px;
+    text-decoration: underline;
+    -webkit-text-decoration-color: currentColor;
+    text-decoration-color: initial;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 0.1em;
+    transition: -webkit-text-decoration-color .15s;
+    transition: text-decoration-color .15s;
+    transition: text-decoration-color .15s,-webkit-text-decoration-color .15s;
+}
+
