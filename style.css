@@ -23,10 +23,61 @@ nav {
     justify-content: center;
     color: white;
     font: 40px 'Oswald', sans-serif;
-    background-color: #1c1b1b;
+    background-color: #191919;
     padding: 10px;
     maring-top: -20px;
 
+}
+
+footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    border-top: 1px solid black;
+    padding-top: 1%;
+    padding-bottom: 0.7%;
+    background-color: #191919;
+
+}
+
+footer a{
+    color: white;
+}
+
+footer.avis{
+    margin-top: 18.4%;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.form1{
+    margin-bottom: 2%;
+}
+
+.form2{
+    margin-bottom: 2%;
+}
+
+.form3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2%;
+}
+
+.rAccueil{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2%;
 
 }
 
@@ -43,6 +94,7 @@ h1{
 }
 
 .contenue {
+
     border-width: 29px;
     border-style: solid;
     border-image-source: url(4023926.jpg);
@@ -52,12 +104,20 @@ h1{
 
 }
 
+.contenue2 {
+    border-width: 29px;
+    border-style: solid;
+    border-image-source: url(4023926.jpg);
+    border-image-slice: 0 300 300 300;
+    border-top: 0px;
+    border-image-repeat: round;
+
+}
 .menu {
     display: flex; /* Transformation en flexbox */
     padding: 0; /* Suppression des marges internes */
     margin-top: 0px;
-    border: 4px solid #1c1b1b;
-    background-color: #1c1b1b; /* Ajout de la couleur d'arrière-plan */
+    background-color: #191919; /* Ajout de la couleur d'arrière-plan */
 
     justify-content: space-around; /* Alignements des liens dans le menu */
 }
@@ -118,6 +178,7 @@ a {
     color: #000;
     text-decoration-thickness: 2px;
     text-decoration: underline;
+    text-align: center;
 }
 
 h2 {
@@ -264,11 +325,14 @@ h2 {
 
 @media screen and (max-width: 1400px) {
     body{
-        width: auto;
+        width: 100%;
     }
-    .contenue {
-        padding-bottom:50%;
+
+    footer.avis {
+    margin-top: 100vh;
+
     }
+
     .trait {
 
         width: 80%;
