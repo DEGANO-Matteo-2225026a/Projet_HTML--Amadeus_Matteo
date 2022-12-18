@@ -98,8 +98,10 @@ h1{
     border-width: 29px;
     border-style: solid;
     border-image-source: url(4023926.jpg);
-    border-image-slice: 0 300 300 300;
+    border-image-slice: 0 300 0 300;
     border-top: 0px;
+    border-bottom: 0px;
+    padding-bottom: 29px;
     border-image-repeat: round;
 
 }
