@@ -1,0 +1,359 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap');
+
+html {
+
+    font-family: 'Unbounded', cursive;
+    font-size: 15px;
+    font-weight: bold;
+    width: 100%;
+}
+
+body {
+    max-width: 100%;
+    height:100%;
+    margin:0px;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font: 40px 'Oswald', sans-serif;
+    background-color: #191919;
+    padding: 10px;
+
+
+}
+
+footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    border-top: 1px solid black;
+    padding-top: 1%;
+    padding-bottom: 0.7%;
+    background-color: #191919;
+
+}
+
+footer a{
+    color: white;
+}
+
+footer.avis{
+    margin-top: 18.4%;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.form1{
+    margin-bottom: 2%;
+}
+
+.form2{
+    margin-bottom: 2%;
+}
+
+.form3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2%;
+}
+
+.rAccueil{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2%;
+
+}
+
+h1{
+    font-family: 'Unbounded', cursive;
+    font-weight: bolder;
+}
+
+.trait {
+    display: flex;
+    flex-direction: column;
+    width: 1380px;
+    border-bottom: 1px solid white;
+}
+
+.contenue {
+
+    border-width: 29px;
+    border-style: solid;
+    border-image-source: url(../photo/4023926.jpg);
+    border-image-slice: 0 300 0 300;
+    border-top: 0px;
+    border-bottom: 0px;
+    padding-bottom: 29px;
+    border-image-repeat: round;
+
+}
+
+.contenue2 {
+    border-width: 29px;
+    border-style: solid;
+    border-image-source: url(../photo/4023926.jpg);
+    border-image-slice: 0 300 300 300;
+    border-top: 0px;
+    border-image-repeat: round;
+
+}
+.menu {
+    display: flex; /* Transformation en flexbox */
+    padding: 0; /* Suppression des marges internes */
+    margin-top: 0px;
+    background-color: #191919; /* Ajout de la couleur d'arrière-plan */
+
+    justify-content: space-around; /* Alignements des liens dans le menu */
+}
+
+.menu li {
+    list-style-type: none; /* Suppression des puces */
+
+}
+
+.menu a {
+    display: block; /* Transformation en block */
+    min-width: 120px; /* Largeur minimale des liens */
+
+    margin: 0.5rem; /* Marges externes */
+    padding: 0.4rem 0; /* Marges internes */
+    text-align: center; /* Centrage du texte */
+    background-color: lightgrey; /* Arrière-plan */
+    color: #fff; /* Couleur du texte */
+    text-decoration: none; /* Suppression du soulignement */
+    border: 1px solid #fff; /* Ajout d'une bordure */
+    border-radius: 4px; /* Arrondis des bordures */
+    transition: all 1s; /* Ajout des effets de transition */
+
+}
+
+.menu a.actif:after {
+    content: "";
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    height: 2px;
+    background: white;
+    transform: scale(0);
+    transition: transform 0.1s ease-in-out;
+
+}
+
+.menu a:hover::after {
+    transform: scale(1);
+}
+
+.menu a.actif {
+    background-color: #008573;
+    color: white;
+    border-color: #0a4f51;
+
+}
+
+.menu a:hover,
+.menu a:hover.actif {
+    background-color: #0a4f51;
+    color: white;
+    border-color: #008573;
+}
+
+a {
+    color: #000;
+    text-decoration-thickness: 2px;
+    text-decoration: underline;
+    text-align: center;
+}
+
+h2 {
+
+    font: 60px 'Oswald', sans-serif;
+    text-indent: 150px;
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
+    text-decoration-color: #a1a0a0;
+}
+
+.main {
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.figure1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.figure2 {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.figure3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.figure1 img {
+    position: inherit;
+    margin-top: 0%;
+
+}
+
+.figure2 img {
+    position: inherit;
+    margin-top: 5%;
+}
+
+.figure3 img {
+    position: inherit;
+    margin-top: -5%;
+}
+
+
+.main img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 200px;
+
+    padding-right: 0px;
+    border: 5px solid #a1a0a0;
+    border-radius: 5px;
+    -webkit-transform: scale(0);
+    transform: scale(1.05);
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+}
+
+.main :hover img {
+    -webkit-transform: scale(0);
+    transform: scale(1);
+    opacity: 1;
+    -webkit-animation: flash 1.5s;
+    animation: flash 1.5s;
+}
+
+@-webkit-keyframes flash {
+    0% {
+        opacity: .4;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes flash {
+    0% {
+        opacity: .4;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.figure1 .span1 {
+    visibility: hidden;
+    font-family: 'Unbounded', cursive;
+    margin-top: 5px;
+    background-color: lightgrey;
+    border-radius: 3px;
+    text-align: center;
+    width: 250px;
+}
+
+.figure1 img:hover + .span1 {
+    visibility: visible;
+}
+
+.figure2 .span2 {
+    visibility: hidden;
+    font-family: 'Unbounded', cursive;
+    margin-top: 5px;
+    background-color: lightgrey;
+    border-radius: 3px;
+    text-align: center;
+    width: 250px;
+}
+
+.figure2 img:hover + .span2 {
+    visibility: visible;
+}
+
+.figure3 .span3 {
+    visibility: hidden;
+    font-family: 'Unbounded', cursive;
+    margin-top: 5px;
+    background-color: lightgrey;
+    border-radius: 3px;
+    text-align: center;
+    width: 250px;
+}
+
+.figure3 img:hover + .span3 {
+    visibility: visible;
+}
+
+@media screen and (max-width: 1400px) {
+    body{
+        width: 100%;
+    }
+
+    footer.avis {
+    margin-top: 100vh;
+
+    }
+
+    .trait {
+
+        width: 80%;
+
+    }
+
+    h2 {
+        text-indent: 50px;
+    }
+    .menu {
+        width: 100%;
+    }
+
+    .menu a {
+        margin: 0px;
+        min-width: 70px;
+        padding: 2px;
+    }
+}
+
+
+
